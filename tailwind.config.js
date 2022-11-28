@@ -16,7 +16,6 @@ module.exports = {
         "Arial",
         "sans-serif",
       ],
-      serif: ["Lora", "Garamond", "Georgia", "Times\\ New\\ Roman", "serif"],
     },
     colors: {
       transparent: "transparent",
@@ -109,6 +108,12 @@ module.exports = {
       },
     },
     extend: {},
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["active"],
+      opacity: ["disabled"],
+    },
   },
   plugins: [],
 };
