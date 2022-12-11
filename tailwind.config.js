@@ -6,6 +6,16 @@ module.exports = {
     "./app/**/*.{js,jsx}",
   ],
   theme: {
+    container: {
+      center: true,
+      screens: {
+        sm: "600px",
+        md: "720px",
+        lg: "960px",
+        xl: "1140px",
+        "2xl": "1320px",
+      },
+    },
     fontFamily: {
       sans: [
         "Poppins",

@@ -13,10 +13,10 @@ function Footer() {
   const year = today.getFullYear();
 
   return (
-    <footer className="flex w-full flex-col bg-forest-500 font-light text-green-200">
-      <div className="container mx-auto flex w-screen flex-wrap justify-around px-6 pt-6 pb-4">
-        <hr className="border-b-1 my-5 w-screen border-green-700 opacity-25 md:hidden" />
-        <div className="flex w-2/5 flex-col items-center gap-4">
+    <footer className="flex w-full w-screen flex-col bg-forest-500 font-light  text-green-200">
+      <div className="container mx-auto flex flex-wrap justify-between px-6 pt-6 pb-4 md:gap-4 xl:gap-12">
+        <hr className="border-b-1 my-5 w-screen border-green-700 opacity-25 lg:hidden" />
+        <div className="flex w-2/5 flex-col items-center md:w-auto lg:mr-auto">
           <Link href="/">
             <Image
               className="p-2"
@@ -32,7 +32,7 @@ function Footer() {
             <p>Greensboro, NC 27406</p>
           </div>
         </div>
-        <div className="order-2 mr-auto mt-6 md:order-1">
+        <div className="order-2 mr-auto mt-6 md:order-1 md:mr-0 md:mt-0 md:w-auto">
           <p className="mb-3 hidden text-lg font-normal text-white sm:block">
             Company
           </p>
@@ -57,7 +57,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="order-1 w-3/5 pl-2 md:order-2">
+        <div className="order-1 w-3/5 pl-2 md:order-2 md:w-auto">
           <p className="mb-3 hidden text-lg font-normal text-white sm:block">
             Contact Us
           </p>
@@ -75,7 +75,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="order-first md:order-last">
+        <div className="order-first lg:order-last">
           <p className="mb-3 hidden text-lg font-normal text-white sm:block">
             Follow Us On
           </p>
@@ -97,7 +97,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div className="order-first md:order-last">
+        <div className="order-first lg:order-last">
           <p className="mb-3 hidden text-lg font-normal text-white sm:block">
             Available On
           </p>

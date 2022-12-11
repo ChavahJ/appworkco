@@ -67,7 +67,6 @@ function HomePage() {
           </a>
         </div>
       </main>
-      <hr className="mt-5 w-screen border-b-2 border-green-500" />
       <Footer />
     </div>
   );
