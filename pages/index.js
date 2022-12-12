@@ -1,8 +1,5 @@
 import Head from "next/head";
-import Footer from "./components/layout/Footer";
-import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import PrimaryButton from "./components/ui/PrimaryButton";
 
 function HomePage() {
   return (
@@ -14,18 +11,6 @@ function HomePage() {
       </Head>
 
       <main className={styles.main}>
-        <ul>
-          <li>
-            <Link href="/about-us">About Us</Link>
-          </li>
-          <li>
-            <Link href="/advantages">Our Advantages</Link>
-          </li>
-          <li>
-            <Link href="/blog">AppWork Blog</Link>
-          </li>
-        </ul>
-        <PrimaryButton link="/contact-us">Contact Us</PrimaryButton>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -67,7 +52,6 @@ function HomePage() {
           </a>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

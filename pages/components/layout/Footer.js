@@ -13,7 +13,7 @@ function Footer() {
   const year = today.getFullYear();
 
   return (
-    <footer className="flex w-full w-screen flex-col bg-forest-500 font-light  text-green-200">
+    <footer className="flex w-full flex-col bg-forest-500 font-light  text-green-200">
       <div className="container mx-auto flex flex-wrap justify-between px-6 pt-6 pb-4 md:gap-4 xl:gap-12">
         <hr className="border-b-1 my-5 w-screen border-green-700 opacity-25 lg:hidden" />
         <div className="flex w-2/5 flex-col items-center md:w-auto lg:mr-auto">
@@ -22,8 +22,8 @@ function Footer() {
               className="p-2"
               src="/logo-appwork-light.png"
               alt="AppWork Logo"
-              width={162}
-              height={70}
+              width={120}
+              height={52}
             />
           </Link>
           <div className="hidden sm:block">
