@@ -1,19 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { compareDesc } from "date-fns";
-import { useLiveReload } from "next-contentlayer/hooks";
-import { allBlogs } from "contentlayer/generated";
-import PostCard from "./components/ui/Postcard";
 
-export function getStaticProps() {
-  const blogs = allBlogs.sort((a, b) => {
-    return compareDesc(new Date(a.date), new Date(b.date));
-  });
-  return { props: { blogs } };
-}
-
-function HomePage({ blogs }) {
-  useLiveReload();
+function HomePage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-green-50">
       <Head>
@@ -23,10 +11,46 @@ function HomePage({ blogs }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Simplify Multifamily Maintenance</h1>
-        {blogs.map((blog, idx) => (
-          <PostCard key={idx} {...blog} />
-        ))}
+        <h1 className={styles.title}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </h1>
+
+        <p className={styles.description}>
+          Get started by editing{" "}
+          <code className={styles.code}>pages/index.js</code>
+        </p>
+
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h2>Learn &rarr;</h2>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          </a>
+
+          <a
+            href="https://github.com/vercel/next.js/tree/canary/examples"
+            className={styles.card}
+          >
+            <h2>Examples &rarr;</h2>
+            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          </a>
+
+          <a
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.card}
+          >
+            <h2>Deploy &rarr;</h2>
+            <p>
+              Instantly deploy your Next.js site to a public URL with Vercel.
+            </p>
+          </a>
+        </div>
       </main>
     </div>
   );
